@@ -1,0 +1,247 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: border-box;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --main-color: rgb(242, 172, 33);
+    --hover-color: rgba(1, 1, 1, 0);
+    --body-color: rgb(30, 30, 30);
+    --container-color: #4d4e5a;
+    --text-color: #ffffff;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1060px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.web-heading {
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+
+.logo h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+/* CSS cho phan than */
+.info-container
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem !important;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    background: rgb(23, 23, 23);
+    width: 30%;
+}
+
+.user-avatar
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-avatar img
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 50%;
+    width: 50%;
+}
+
+.edit
+{
+    border-radius: 12px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--main-color);
+}
+
+.log-out
+{
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    margin-bottom: 2rem;
+}
+
+.edit button
+{
+    background: transparent;
+    border-style: hidden;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.log-out button {
+    background: transparent;
+    border-style: hidden;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.edit:hover, .log-out:hover
+{
+    transform: scale(1.07);
+}
+
+.user-heading
+{
+    margin-top: 2rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.user-heading span
+{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* responsive */
+@media(max-width : 1063px)
+{
+    .user-heading {
+        font-size: 0.8rem;
+    }
+
+    .edit button {
+        font-size: 1.4rem;
+    }
+
+    .log-out button {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width : 822px) {
+    .user-heading {
+        font-size: 0.6rem;
+    }
+
+    .info-container {
+        width: 50%;
+    }
+
+    .edit button {
+        font-size: 1.2rem;
+    }
+
+    .log-out
+    {
+        margin-top: 1rem !important;
+    }
+
+    .log-out button {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width : 610px) {
+    .edit button {
+        font-size: 1rem;
+    }
+
+    .log-out button {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width : 590px) {
+    .info-container {
+        width: 60%;
+    }
+}

@@ -1,0 +1,9 @@
+if(!$get_ep == $ep)
+            {
+                ?>
+                    <a href="<?= $current_path . "&ep=" .$ep ?>">Tập <?= $ep?></a>
+                <?php
+            }
+           ?>
+            <!-- <a href="<?= $current_path . "&ep=" .$ep ?>" class="chosen-episode">Tập <?= $ep?></a> -->
+           <?php
